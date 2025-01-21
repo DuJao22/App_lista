@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: deploysiteListaCompra
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uwsgi --ini uwsgi.ini"
