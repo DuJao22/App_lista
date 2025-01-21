@@ -1,1 +1,4 @@
-uwsgi --http :5000 --wsgi-file app.wsgi
+from app import app
+
+if __name__ == "__main__":
+    app.run()
